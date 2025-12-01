@@ -54,6 +54,22 @@
   background-color: #bb2d3b;
 }
 
+.butndetalis {
+  align-self: flex-end;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #314ad4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+.butndetalis:hover {
+  background-color: #0d2186;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;

@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,9 @@ export default function RootLayout({
         <TanStackProvider>
           <Header />
           {children}
+          <div id="modal-root"></div>
           <Footer />
+          <ReactQueryDevtools initialIsOpen={false} />
         </TanStackProvider>
       </body>
     </html>
